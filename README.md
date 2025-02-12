@@ -129,4 +129,25 @@ sudo systemctl enable sonar
 sudo ufw allow 9000/tcp
 ```
 
+# Step 2 setup in GitHub Token
+
+> Go to github settings--> Developer Settings
+![image](https://github.com/user-attachments/assets/3d0d0b67-9b1c-4a20-b085-432c8c61ad99)
+
+> Developer Setting--> Click Classic Tokens and Generate new token
+# enable the nessesary scopes
+![image](https://github.com/user-attachments/assets/ae39945b-4920-4ee8-b329-a9c0ed0c5795)
+
+# Go to jenkins page (eg: ip-address:8080)
+> to find the initial password in jenkins ec2 server for login 
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+> Goto managa jenkins and in plugins install the nessessary package
+```
+sonarqube
+github
+```
+> Go to new Items and create new freestyle project
+![image](https://github.com/user-attachments/assets/275b5002-a8b4-43c3-bed7-e9d3a3646957)
 
