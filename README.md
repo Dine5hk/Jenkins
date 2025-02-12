@@ -151,3 +151,6 @@ github
 > Go to new Items and create new freestyle project
 ![image](https://github.com/user-attachments/assets/275b5002-a8b4-43c3-bed7-e9d3a3646957)
 
+# In ssh jenkins server to create, add and give permission to jenkins
+
+```
