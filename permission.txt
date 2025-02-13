@@ -1,0 +1,12 @@
+sudo apy update
+
+
+sudo yum install openssh-server
+
+
+sudo adduser newuser
+sudo passwd newuser
+sudo usermod -aG sudo newuser
+cd /etc/ssh/sshd_config
+remove the # symbl PasswordAuthentication yes
+sudo systemctl restart sshd
